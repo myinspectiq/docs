@@ -1,0 +1,77 @@
+
+/*
+ * INSPECTIQ HELP CENTRE
+ * Custom Branding - Version 1.0
+ *
+ * Brand:
+ * Purple: #9A73FF
+ * Cyan:   #00C2E3
+ * Navy:   #0B1020
+ *
+ * Initial experiment targets Home_v2 only.
+ */
+
+:root {
+  --iiq-purple: #9A73FF;
+  --iiq-blue: #6477EB;
+  --iiq-cyan: #00C2E3;
+  --iiq-navy: #0B1020;
+
+  --iiq-gradient: linear-gradient(
+    105deg,
+    #9A73FF 0%,
+    #6477EB 50%,
+    #00C2E3 100%
+  );
+}
+
+/* Home_v2: gradient headline */
+
+[data-current-path="/index-2"] h1 {
+  background-image: var(--iiq-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--iiq-purple);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+/* Home_v2: refined section headings */
+
+[data-current-path="/index-2"] h2 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Home_v2: gradient accent below main heading */
+
+[data-current-path="/index-2"] h1::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 4px;
+  margin-top: 22px;
+  border-radius: 20px;
+  background: var(--iiq-gradient);
+}
+
+/* Home_v2: improve vertical rhythm */
+
+[data-current-path="/index-2"] h2 {
+  margin-top: 36px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 640px) {
+  [data-current-path="/index-2"] h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  [data-current-path="/index-2"] h1::after {
+    width: 80px;
+  }
+}
