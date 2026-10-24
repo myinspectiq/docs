@@ -1,0 +1,60 @@
+
+/*
+ * INSPECTIQ HELP CENTRE
+ * Custom Branding - Version 2.0
+ *
+ * Purple: #9A73FF
+ * Blue:   #6477EB
+ * Cyan:   #00C2E3
+ */
+
+:root {
+  --iiq-purple: #9A73FF;
+  --iiq-blue: #6477EB;
+  --iiq-cyan: #00C2E3;
+  --iiq-navy: #0B1020;
+
+  --iiq-gradient: linear-gradient(
+    105deg,
+    #9A73FF 0%,
+    #6477EB 50%,
+    #00C2E3 100%
+  );
+}
+
+/* Gradient heading test */
+
+h1 {
+  background: var(--iiq-gradient) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: var(--iiq-purple);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+/* Subtle gradient accent beneath headings */
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: var(--iiq-gradient);
+}
+
+/* Mobile refinements */
+
+@media (max-width: 640px) {
+  h1 {
+    line-height: 1.2;
+  }
+
+  h1::after {
+    width: 75px;
+  }
+}
