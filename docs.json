@@ -122,5 +122,9 @@
   },
   "styling": {
     "eyebrows": "section"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": false
   }
 }
