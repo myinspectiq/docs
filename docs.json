@@ -38,7 +38,6 @@
             "group": "Welcome",
             "pages": [
               "index",
-              "index-2",
               "getting-started/overview",
               "getting-started/account-setup",
               "getting-started/first-inspection"
