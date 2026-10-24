@@ -93,21 +93,24 @@
         ]
       },
       {
-        "group": "Settings & Administration",
+        "group": "Business Settings",
         "pages": [
           "settings/business-settings",
-          "settings/my-settings",
-          "team-management/overview"
+          "company-profile",
+          "fees-and-services",
+          "team-management/overview",
+          "credentials-and-standards",
+          "settings/untitled-page",
+          "untitled-page",
+          "settings/inspection-report-content",
+          "report-and-delivery-settings",
+          "untitled-page-2"
         ]
       },
       {
-        "group": "Help & Resources",
+        "group": "My Settings",
         "pages": [
-          "tips/best-practices",
-          "tutorials/video-tutorials",
-          "troubleshooting/common-issues",
-          "troubleshooting/offline-sync",
-          "whats-new/latest-updates"
+          "settings/my-settings"
         ]
       }
     ]
