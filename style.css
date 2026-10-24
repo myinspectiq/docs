@@ -1,11 +1,7 @@
 
 /*
  * INSPECTIQ HELP CENTRE
- * Custom Branding - Version 2.0
- *
- * Purple: #9A73FF
- * Blue:   #6477EB
- * Cyan:   #00C2E3
+ * Global Brand Styles - Version 4.0
  */
 
 :root {
@@ -22,7 +18,9 @@
   );
 }
 
-/* Gradient heading test */
+/* ======================================
+   GLOBAL HEADINGS
+   ====================================== */
 
 h1 {
   background: var(--iiq-gradient) !important;
@@ -35,35 +33,24 @@ h1 {
   line-height: 1.15;
 }
 
-/* Subtle gradient accent beneath headings */
-
 h1::after {
   content: "";
   display: block;
-  width: 100px;
+  width: 110px;
   height: 4px;
   margin-top: 20px;
   border-radius: 20px;
   background: var(--iiq-gradient);
 }
 
-/* Mobile refinements */
-
-@media (max-width: 640px) {
-  h1 {
-    line-height: 1.2;
-  }
-
-  h1::after {
-    width: 75px;
-  }
+h2 {
+  font-weight: 750;
+  letter-spacing: -0.025em;
 }
 
-/* ==========================================
-   INSPECTIQ - CARD STYLING V1
-   ========================================== */
-
-/* Target clickable Mintlify feature cards */
+/* ======================================
+   FEATURE CARDS
+   ====================================== */
 
 main a:has(> div) {
   border-radius: 14px;
@@ -74,25 +61,33 @@ main a:has(> div) {
     background-color 180ms ease;
 }
 
-/* Hover and keyboard focus */
-
 main a:has(> div):hover,
 main a:has(> div):focus-visible {
   transform: translateY(-3px);
-  border-color: #9A73FF;
+  border-color: var(--iiq-purple);
   box-shadow:
     0 0 0 1px rgba(154, 115, 255, 0.28),
     0 12px 28px rgba(0, 194, 227, 0.08);
 }
 
-/* Better keyboard accessibility */
-
 main a:has(> div):focus-visible {
-  outline: 2px solid #00C2E3;
+  outline: 2px solid var(--iiq-cyan);
   outline-offset: 3px;
 }
 
-/* Respect reduced motion */
+/* ======================================
+   MOBILE & ACCESSIBILITY
+   ====================================== */
+
+@media (max-width: 640px) {
+  h1 {
+    line-height: 1.2;
+  }
+
+  h1::after {
+    width: 80px;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   main a:has(> div) {
