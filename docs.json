@@ -1,6 +1,9 @@
+
 {
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "InspectIQ Help Centre",
+  "description": "The official InspectIQ Help Centre. Find guides and tutorials for work orders, home inspections, AI-assisted findings, reports, and business settings.",
   "colors": {
     "primary": "#9A73FF",
     "light": "#9A73FF",
@@ -44,8 +47,6 @@
   "styling": {
     "eyebrows": "section"
   },
-  "description": "The official InspectIQ Help Centre. Find guides and tutorials for work orders, home inspections, AI-assisted findings, reports, and business settings.",
-  "$schema": "https://mintlify.com/docs.json",
   "navigation": {
     "groups": [
       {
