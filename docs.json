@@ -1,5 +1,4 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "InspectIQ Help Centre",
   "colors": {
@@ -7,20 +6,24 @@
     "light": "#9A73FF",
     "dark": "#00C2E3"
   },
-  "favicon": {
-    "light": "/images/favicon.ico",
-    "dark": "/images/favicon.ico"
-  },
   "logo": {
     "light": "/images/InspectIQ_Brevo_Logo_Light_Transparent_1000px.png",
     "dark": "/images/InspectIQLogo_v3_darkmode.png",
     "href": "https://www.myinspectiq.com/"
   },
+  "favicon": {
+    "light": "/images/favicon.ico",
+    "dark": "/images/favicon.ico"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": false
+  },
   "navbar": {
     "links": [
       {
-        "label": "Contact Support",
-        "href": "mailto:support@myinspectiq.com"
+        "href": "mailto:support@myinspectiq.com",
+        "label": "Contact Support"
       }
     ],
     "primary": {
@@ -29,6 +32,20 @@
       "href": "https://app.myinspectiq.com"
     }
   },
+  "footer": {
+    "socials": {
+      "facebook": "https://facebook.com/myinspectiq",
+      "instagram": "https://instagram.com/myinspectiq"
+    }
+  },
+  "icons": {
+    "library": "fontawesome"
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "description": "The official InspectIQ Help Centre. Find guides and tutorials for work orders, home inspections, AI-assisted findings, reports, and business settings.",
+  "$schema": "https://mintlify.com/docs.json",
   "navigation": {
     "groups": [
       {
@@ -93,22 +110,5 @@
         ]
       }
     ]
-  },
-  "footer": {
-    "socials": {
-      "facebook": "https://facebook.com/myinspectiq",
-      "instagram": "https://instagram.com/myinspectiq"
-    }
-  },
-  "icons": {
-    "library": "fontawesome"
-  },
-  "styling": {
-    "eyebrows": "section"
-  },
-  "appearance": {
-    "default": "dark",
-    "strict": false
-  },
-  "description": "The official InspectIQ Help Centre. Find guides and tutorials for work orders, home inspections, AI-assisted findings, reports, and business settings."
+  }
 }
