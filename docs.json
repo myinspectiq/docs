@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "maple",
   "name": "InspectIQ Help Centre",
   "colors": {
     "primary": "#9A73FF",
@@ -38,6 +38,7 @@
             "group": "Welcome",
             "pages": [
               "index",
+              "index-2",
               "getting-started/overview",
               "getting-started/account-setup",
               "getting-started/first-inspection"
@@ -47,6 +48,7 @@
             "group": "Work Orders & Scheduling",
             "pages": [
               "work-orders/overview",
+              "work-orders/overview-2",
               "work-orders/creating-work-orders",
               "work-orders/scheduling-inspections",
               "work-orders/agreements-signatures"
