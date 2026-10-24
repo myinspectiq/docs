@@ -30,82 +30,66 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Help Centre",
-        "groups": [
-          {
-            "group": "Welcome",
-            "pages": [
-              "index",
-              "getting-started/overview",
-              "getting-started/account-setup",
-              "getting-started/first-inspection"
-            ]
-          },
-          {
-            "group": "Work Orders & Scheduling",
-            "pages": [
-              "work-orders/overview",
-              "work-orders/overview-2",
-              "work-orders/creating-work-orders",
-              "work-orders/scheduling-inspections",
-              "work-orders/agreements-signatures"
-            ]
-          },
-          {
-            "group": "Conducting Inspections",
-            "pages": [
-              "inspections/overview",
-              "inspections/capturing-photos",
-              "inspections/area-overviews",
-              "inspections/capturing-findings",
-              "inspections/ai-generated-findings",
-              "inspections/reviewing-editing-findings",
-              "inspections/completing-inspection"
-            ]
-          },
-          {
-            "group": "Reports & Payments",
-            "pages": [
-              "reports/overview",
-              "reports/report-delivery"
-            ]
-          },
-          {
-            "group": "App & Settings",
-            "pages": [
-              "offline-mode/overview",
-              "team-management/overview",
-              "settings/business-settings",
-              "settings/my-settings"
-            ]
-          }
+        "group": "Home",
+        "pages": [
+          "index"
         ]
       },
       {
-        "tab": "Guides & Resources",
-        "groups": [
-          {
-            "group": "Tips & Tutorials",
-            "pages": [
-              "tips/best-practices",
-              "tutorials/video-tutorials"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "troubleshooting/common-issues",
-              "troubleshooting/offline-sync"
-            ]
-          },
-          {
-            "group": "What's New",
-            "pages": [
-              "whats-new/latest-updates"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "getting-started/overview",
+          "getting-started/account-setup",
+          "getting-started/first-inspection"
+        ]
+      },
+      {
+        "group": "Work Orders",
+        "pages": [
+          "work-orders/overview",
+          "work-orders/creating-work-orders",
+          "work-orders/scheduling-inspections",
+          "work-orders/agreements-signatures"
+        ]
+      },
+      {
+        "group": "Inspections",
+        "pages": [
+          "inspections/overview",
+          "inspections/capturing-photos",
+          "inspections/area-overviews",
+          "inspections/capturing-findings",
+          "inspections/ai-generated-findings",
+          "inspections/reviewing-editing-findings",
+          "inspections/completing-inspection",
+          "offline-mode/overview"
+        ]
+      },
+      {
+        "group": "Reports",
+        "pages": [
+          "reports/overview",
+          "reports/report-delivery"
+        ]
+      },
+      {
+        "group": "Settings & Administration",
+        "pages": [
+          "settings/business-settings",
+          "settings/my-settings",
+          "team-management/overview"
+        ]
+      },
+      {
+        "group": "Help & Resources",
+        "pages": [
+          "tips/best-practices",
+          "tutorials/video-tutorials",
+          "troubleshooting/common-issues",
+          "troubleshooting/offline-sync",
+          "whats-new/latest-updates"
         ]
       }
     ]
@@ -125,5 +109,6 @@
   "appearance": {
     "default": "dark",
     "strict": false
-  }
+  },
+  "description": "The official InspectIQ Help Centre. Find guides and tutorials for work orders, home inspections, AI-assisted findings, reports, and business settings."
 }
