@@ -1,0 +1,124 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "InspectIQ Help Centre",
+  "colors": {
+    "primary": "#9A73FF",
+    "light": "#9A73FF",
+    "dark": "#00C2E3"
+  },
+  "favicon": {
+    "light": "/images/favicon.ico",
+    "dark": "/images/favicon.ico"
+  },
+  "logo": {
+    "light": "/images/InspectIQ_Brevo_Logo_Light_Transparent_1000px.png",
+    "dark": "/images/InspectIQLogo_v3_darkmode.png",
+    "href": "https://www.myinspectiq.com/"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Contact Support",
+        "href": "mailto:support@myinspectiq.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open App",
+      "href": "https://app.myinspectiq.com"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Centre",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "index",
+              "getting-started/overview",
+              "getting-started/account-setup",
+              "getting-started/first-inspection"
+            ]
+          },
+          {
+            "group": "Work Orders & Scheduling",
+            "pages": [
+              "work-orders/overview",
+              "work-orders/creating-work-orders",
+              "work-orders/scheduling-inspections",
+              "work-orders/agreements-signatures"
+            ]
+          },
+          {
+            "group": "Conducting Inspections",
+            "pages": [
+              "inspections/overview",
+              "inspections/capturing-photos",
+              "inspections/area-overviews",
+              "inspections/capturing-findings",
+              "inspections/ai-generated-findings",
+              "inspections/reviewing-editing-findings",
+              "inspections/completing-inspection"
+            ]
+          },
+          {
+            "group": "Reports & Payments",
+            "pages": [
+              "reports/overview",
+              "reports/report-delivery"
+            ]
+          },
+          {
+            "group": "App & Settings",
+            "pages": [
+              "offline-mode/overview",
+              "team-management/overview",
+              "settings/business-settings",
+              "settings/my-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides & Resources",
+        "groups": [
+          {
+            "group": "Tips & Tutorials",
+            "pages": [
+              "tips/best-practices",
+              "tutorials/video-tutorials"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/offline-sync"
+            ]
+          },
+          {
+            "group": "What's New",
+            "pages": [
+              "whats-new/latest-updates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "facebook": "https://facebook.com/myinspectiq",
+      "instagram": "https://instagram.com/myinspectiq"
+    }
+  },
+  "icons": {
+    "library": "fontawesome"
+  },
+  "styling": {
+    "eyebrows": "section"
+  }
+}

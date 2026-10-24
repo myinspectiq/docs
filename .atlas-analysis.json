@@ -1,0 +1,105 @@
+{
+  "projectType": "saas",
+  "projectName": "InspectIQ",
+  "projectDescription": "AI-powered home inspection report writing platform that helps home inspectors capture findings, generate reports, manage work orders, and deliver professional results to clients.",
+  "theme": "almond",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Centre",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "index",
+              "getting-started/overview",
+              "getting-started/account-setup",
+              "getting-started/first-inspection"
+            ]
+          },
+          {
+            "group": "Work Orders & Scheduling",
+            "pages": [
+              "work-orders/overview",
+              "work-orders/creating-work-orders",
+              "work-orders/scheduling-inspections",
+              "work-orders/agreements-signatures"
+            ]
+          },
+          {
+            "group": "Conducting Inspections",
+            "pages": [
+              "inspections/overview",
+              "inspections/capturing-photos",
+              "inspections/area-overviews",
+              "inspections/capturing-findings",
+              "inspections/ai-generated-findings",
+              "inspections/reviewing-editing-findings",
+              "inspections/completing-inspection"
+            ]
+          },
+          {
+            "group": "Reports & Payments",
+            "pages": [
+              "reports/overview",
+              "reports/report-delivery",
+              "payments/overview"
+            ]
+          },
+          {
+            "group": "App & Settings",
+            "pages": [
+              "offline-mode/overview",
+              "team-management/overview",
+              "settings/business-settings",
+              "settings/my-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides & Resources",
+        "groups": [
+          {
+            "group": "Tips & Tutorials",
+            "pages": [
+              "tips/best-practices",
+              "tutorials/video-tutorials"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/offline-sync"
+            ]
+          },
+          {
+            "group": "What's New",
+            "pages": [
+              "whats-new/latest-updates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-generated inspection findings from photos",
+    "Digital work order creation and management",
+    "Scheduling with calendar integration",
+    "Digital agreements and e-signatures",
+    "Offline mode with automatic syncing",
+    "Professional PDF report generation",
+    "Report delivery to clients",
+    "Integrated payment collection",
+    "Team management and multi-inspector support",
+    "Photo capture with annotation tools",
+    "Area overview and room-by-room organization",
+    "Customisable report templates and business settings"
+  ],
+  "publicApiSurface": []
+}

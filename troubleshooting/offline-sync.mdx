@@ -1,0 +1,138 @@
+---
+title: "InspectIQ Offline Mode and Sync Troubleshooting Guide"
+sidebarTitle: "Sync Issues"
+description: "Diagnose and resolve offline mode and sync issues in InspectIQ — including stuck syncs, missing data after reconnecting, and conflicting changes."
+---
+
+InspectIQ is built to work reliably both online and offline, but sync issues can occasionally occur — especially if your internet connection drops unexpectedly or you're working across multiple devices. This page explains how InspectIQ handles offline data, what the different sync states mean, and how to resolve the most common sync problems. For a general overview of how offline mode works, see [Offline Mode Overview](/offline-mode/overview).
+
+<Tip>
+  Always sync your app over Wi-Fi before leaving the office. This ensures your work orders and templates are fully downloaded and ready to use, even if you lose mobile data on site.
+</Tip>
+
+## Understanding Sync Status
+
+InspectIQ displays a sync indicator on your work orders and in the app header so you always know the current state of your data. Here's what each status means:
+
+- **Synced** — All data on this device matches what's on the InspectIQ servers. You're up to date.
+- **Pending** — You have local changes (new findings, photos, or edits) that haven't been uploaded to the server yet. This is normal when you're offline or on a slow connection.
+- **Syncing** — The app is actively uploading or downloading data. Don't close the app while this indicator is active.
+- **Sync Error** — Something went wrong during the last sync attempt. This usually means a connection problem or a conflict that needs your attention.
+
+<Warning>
+  Never force-close the app while the **Syncing** indicator is active. Interrupting an active sync can leave your data in an incomplete state and may require manual recovery steps.
+</Warning>
+
+You can check the sync status of any individual work order by opening it and looking at the status indicator near the top of the screen. A global sync status for your account is also visible in **Settings → Sync**.
+
+## Work Order Not Available Offline
+
+If you arrive on site and find that a work order isn't available because you forgot to download it, here's what to do.
+
+**If you have any mobile data connection:**
+
+<Steps>
+  <Step title="Open the work order">
+    Find the work order in your list. Even with a slow connection, InspectIQ may be able to load it.
+  </Step>
+  <Step title="Tap Download for Offline">
+    On the work order detail screen, tap **Download for Offline**. Wait for the download to complete before you lose your connection.
+  </Step>
+  <Step title="Enable airplane mode once downloaded">
+    Once the download is complete, your work order is available offline. You can now proceed with the inspection even without a signal.
+  </Step>
+</Steps>
+
+**If you have no connection at all:**
+
+<Steps>
+  <Step title="Check for a cached version">
+    If you've opened the work order recently on this device, a partial version may be cached. Open the app and look for the work order — it may appear with limited functionality.
+  </Step>
+  <Step title="Use a hotspot if available">
+    If a colleague has a stronger signal, you can temporarily connect to their hotspot to download the work order.
+  </Step>
+  <Step title="Create a new offline work order">
+    As a last resort, you can start a new blank work order on your device in offline mode and manually enter the client and property details. This data will sync once you're back online.
+  </Step>
+</Steps>
+
+<Note>
+  To avoid this situation in future, get into the habit of opening every work order you have scheduled for the week at the start of each week while connected to Wi-Fi. This caches the content automatically.
+</Note>
+
+## Sync Stuck or Not Completing
+
+If the sync indicator has been showing **Syncing** or **Pending** for an unusually long time without completing, follow these steps.
+
+<Steps>
+  <Step title="Check your internet connection">
+    Open a browser or another app to confirm you have an active internet connection. If your connection is poor or intermittent, the sync may simply be waiting for a stable signal.
+  </Step>
+  <Step title="Force a manual sync">
+    Go to **Settings → Sync** and tap **Sync Now**. This forces the app to retry any pending uploads immediately.
+  </Step>
+  <Step title="Restart the app">
+    Close InspectIQ fully — swipe it away from your recent apps — and reopen it. The app will automatically attempt to resume any pending sync on startup.
+  </Step>
+  <Step title="Switch to Wi-Fi">
+    If you're on mobile data, switch to a Wi-Fi connection and trigger a manual sync again. Large photo uploads in particular perform much more reliably on Wi-Fi.
+  </Step>
+  <Step title="Restart your device">
+    If the sync is still stuck after the above steps, restart your phone or tablet. This clears background processes that may be interfering with the upload.
+  </Step>
+  <Step title="Contact support if the issue persists">
+    If the sync error continues after a device restart, contact InspectIQ support at [support@inspectiq.com](mailto:support@inspectiq.com) with your work order ID and a screenshot of the sync status. The support team can investigate server-side logs to identify the cause.
+  </Step>
+</Steps>
+
+<Warning>
+  Do not uninstall and reinstall the app to fix a stuck sync. This may delete locally stored data that hasn't yet been uploaded. Always contact support before reinstalling.
+</Warning>
+
+## Data Appears to Be Missing After Sync
+
+If you notice that findings, photos, or notes seem to be missing after a sync, follow these steps to investigate.
+
+<Steps>
+  <Step title="Check the sync status of the work order">
+    Open the work order and check whether the sync indicator shows **Synced**. If it shows **Pending** or **Sync Error**, your data may not have uploaded yet — try forcing a manual sync first.
+  </Step>
+  <Step title="Check if data is on another device">
+    If you completed part of the inspection on a second device, the data from that device may not have synced to the server yet. Open the app on the other device, connect to internet, and trigger a manual sync.
+  </Step>
+  <Step title="Look for data in draft findings">
+    Some findings may have been saved as drafts rather than submitted. Open the work order and check the **Drafts** section for any unsaved items.
+  </Step>
+  <Step title="Check completed and archived work orders">
+    If the work order was accidentally submitted or archived, findings will still be visible in **Completed Inspections**. Search by property address or date to locate it.
+  </Step>
+  <Step title="Contact support promptly">
+    If you've confirmed that data is genuinely missing and you believe it was synced, contact support immediately with your work order ID, the device model you used, and the approximate time the inspection was completed. Acting quickly gives the support team the best chance of recovering your data from server logs.
+  </Step>
+</Steps>
+
+<Note>
+  InspectIQ stores a local backup of your offline data for up to 72 hours after an inspection. If you notice missing data soon after completing a job, your local copy may still be intact.
+</Note>
+
+## Conflicting Changes
+
+Conflicts happen when the same work order is edited on two different devices before either device has synced to the server. For example, if you start an inspection on your phone and a colleague adds findings on their tablet before either device has uploaded, InspectIQ may detect a conflict when both devices try to sync.
+
+**How InspectIQ handles conflicts:**
+
+- InspectIQ will flag the conflict with a **Conflict Detected** banner on the affected work order.
+- You'll be shown a side-by-side comparison of the two versions, highlighting what's different.
+- You can choose to keep one version, or manually merge changes by selecting individual findings from each version.
+- The resolved version is then uploaded as the final record.
+
+**Best practices to avoid conflicts:**
+
+- **Only work on a work order from one device at a time.** If you hand off a job to a colleague, make sure the first device has fully synced before the second device starts making edits.
+- **Sync before and after each session.** Before opening a work order to add findings, do a quick manual sync to pull down the latest version from the server.
+- **Assign work orders clearly.** Use InspectIQ's team assignment features to designate a primary inspector for each job so it's always clear who is editing what.
+
+<Tip>
+  If you regularly work with a colleague on the same inspection, consider splitting the inspection by area — one person handles the interior, one handles the exterior — so you're each working on different parts of the work order and conflicts are far less likely.
+</Tip>

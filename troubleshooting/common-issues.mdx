@@ -1,0 +1,128 @@
+---
+title: "Fix Common InspectIQ Problems: Quick Troubleshooting Guide"
+sidebarTitle: "Common Issues"
+description: "Quick fixes for the most common InspectIQ issues — covering login problems, photo uploads, AI findings, report delivery, and missing data."
+---
+
+Even the best tools run into bumps occasionally. If something isn't working the way you expect in InspectIQ, you're likely not the first person to encounter it. This page covers the most common issues inspectors report and walks you through how to fix them quickly. Work through the steps for your issue below, and if you're still stuck, reach out to the support team.
+
+<Accordion title="I can't log in to my account">
+  If you're unable to log in, try the following steps in order:
+
+  1. **Double-check your credentials.** Make sure you're using the email address you signed up with — not a secondary address. Passwords are case-sensitive.
+  2. **Reset your password.** On the login screen, tap **Forgot Password** and follow the link sent to your email. Check your spam or junk folder if you don't see it within a few minutes.
+  3. **Confirm your email address.** If you recently created your account, you may need to verify your email before you can log in. Look for a verification email from InspectIQ and click the confirmation link.
+  4. **Check your subscription status.** If your subscription has lapsed, you may be locked out of your account. Log in to the InspectIQ web portal at [app.inspectiq.com](https://app.inspectiq.com) to check your billing status.
+  5. **Try a different browser or device.** If you're logging in via a browser, try clearing your cache or switching to a different browser to rule out a local issue.
+
+  If none of the above works, contact support with your registered email address and a description of the error message you're seeing.
+</Accordion>
+
+<Accordion title="Photos aren't uploading">
+  Photo upload issues are usually caused by connectivity or device storage. Here's what to check:
+
+  1. **Check your internet connection.** Open a browser and visit any website to confirm you're connected. If you're on mobile data, make sure data is enabled for InspectIQ in your device's settings.
+  2. **Check your device storage.** If your phone's storage is nearly full, InspectIQ may be unable to process or upload photos. Free up space by deleting unused apps or photos, then try again.
+  3. **Try a manual sync.** Go to **Settings → Sync** and tap **Sync Now** to force a fresh upload attempt.
+  4. **Restart the app.** Close InspectIQ fully (don't just minimise it) and reopen it. Then try uploading the photos again.
+  5. **Check file size.** Very high-resolution photos from some devices can be large. If uploads are consistently failing for one device, try enabling photo compression in **Settings → Photos**.
+
+  <Note>
+    Photos taken in offline mode are queued for upload automatically once you reconnect. You don't need to do anything — just make sure you have a stable connection and the app is open.
+  </Note>
+</Accordion>
+
+<Accordion title="The AI isn't generating findings">
+  If the AI isn't producing suggestions after you upload photos, try the following:
+
+  1. **Check your internet connection.** AI findings require an active internet connection to process. They are not available in offline mode — photos will be queued and processed once you're back online.
+  2. **Check photo quality.** The AI works best with clear, well-lit, in-focus photos. Blurry, dark, or obstructed images often don't produce suggestions. Retake the photo if needed.
+  3. **Confirm AI findings are enabled.** Go to **Settings → AI & Reporting** and make sure the **AI-Generated Findings** toggle is switched on.
+  4. **Wait a moment and refresh.** AI processing can take a few seconds, especially if you've uploaded multiple photos at once. Pull down to refresh the findings screen and check again.
+  5. **Check that photos are attached to a finding.** AI suggestions are generated per finding, not per photo. Make sure your photos are attached to a specific finding entry within your work order.
+
+  <Tip>
+    Shooting with good overhead or natural lighting makes the biggest difference to AI accuracy. Even a small torch aimed at the subject can significantly improve results in dark spaces.
+  </Tip>
+</Accordion>
+
+<Accordion title="My report looks different than expected">
+  If the generated report doesn't match what you were expecting, here's how to diagnose it:
+
+  1. **Check your template settings.** Go to **Settings → Report Templates** and confirm the correct template is assigned to this work order type. If you have multiple templates, it's easy to have the wrong one selected.
+  2. **Check for incomplete findings.** Findings that are missing descriptions, severity ratings, or required photos may appear differently in the report — or may be excluded entirely depending on your template settings.
+  3. **Preview before sending.** Always use the **Preview Report** option before delivering to a client. This shows you exactly what they'll see and lets you catch any unexpected formatting or missing sections.
+  4. **Check your branding settings.** If your logo, colours, or contact details look wrong, visit **Settings → Business Settings** to update them. Changes apply to new report generations.
+  5. **Regenerate the report.** If you've made changes to findings or template settings, tap **Regenerate Report** to produce a fresh version.
+</Accordion>
+
+<Accordion title="A client hasn't received their report">
+  If a client says they haven't received their report, work through these steps:
+
+  1. **Verify the email address.** Open the work order and confirm the client's email address is correct. Even a single character typo will prevent delivery.
+  2. **Ask the client to check their spam folder.** Report delivery emails can occasionally be filtered as spam, especially for new clients. Ask them to search for "InspectIQ" in all folders.
+  3. **Resend the report link.** From the work order, tap **Resend Report** to send a fresh delivery email to the client.
+  4. **Share the report link directly.** From the report screen, copy the shareable link and send it to the client manually via text or another email.
+  5. **Check the delivery status.** The work order screen shows whether the report email was successfully sent. If there's an error flag next to the delivery status, there may have been a sending issue — contact support with the work order ID.
+</Accordion>
+
+<Accordion title="Payment isn't showing as received">
+  If a client has paid but the work order still shows payment as pending, try the following:
+
+  1. **Record the payment manually.** If payment was collected in cash or outside of InspectIQ's integrated system, open the work order and tap **Record Payment** to mark it as received manually.
+  2. **Check your payment account connection.** Go to **Settings → Payments** and confirm that your payment provider (e.g. Stripe) is still connected and authorised. You may need to reconnect if the integration has expired.
+  3. **Allow time for processing.** Some payment methods take one to two business days to reflect. Check back the following day before following up.
+  4. **Check the correct work order.** Confirm you're looking at the right work order — it's easy to have multiple jobs for the same client and check the wrong one.
+  5. **Contact your payment provider.** If a charge was processed but InspectIQ isn't reflecting it, the issue may be on the payment provider's side. Check your payment dashboard directly.
+</Accordion>
+
+<Accordion title="The app is running slowly">
+  If InspectIQ feels sluggish, these steps usually help:
+
+  1. **Close other apps.** Running too many apps in the background can slow everything down. Close unused apps before opening InspectIQ on a busy inspection day.
+  2. **Clear the app cache.** On Android, go to **Device Settings → Apps → InspectIQ → Clear Cache**. On iOS, you can offload and reinstall the app to achieve a similar result.
+  3. **Update the app.** Check the App Store or Google Play for an available InspectIQ update. Performance improvements are released regularly.
+  4. **Free up device storage.** Devices with very little free storage tend to run slower overall. Try to keep at least 2–3 GB of free space on your device while working.
+  5. **Restart your device.** A simple restart clears memory and often resolves temporary slowness.
+
+  <Note>
+    InspectIQ is photo-heavy by nature. If you're working with a large work order (50+ photos), some brief processing delays are normal while the app handles the data.
+  </Note>
+</Accordion>
+
+<Accordion title="I lost data / findings are missing">
+  Missing findings are stressful, but in most cases your data is recoverable. Here's what to do:
+
+  1. **Check your sync status.** Open the work order and look for the sync indicator. If it shows **Pending** or **Not Synced**, your findings may still be stored locally on your device and just haven't uploaded yet.
+  2. **Don't close or uninstall the app.** If you think data may be unsynced, keep the app open and connect to Wi-Fi to allow the sync to complete.
+  3. **Check other devices.** If you use multiple devices, check whether the findings appear on another device you used during the inspection.
+  4. **Look in completed inspections.** If you accidentally submitted or archived the work order, findings may be visible in **Completed Inspections** rather than your active list.
+  5. **Contact support immediately.** If none of the above reveals your data, contact support as soon as possible with your work order ID and the device you used. The support team can investigate server-side sync logs to help recover your data.
+
+  <Warning>
+    Do not delete or reinstall the app if you believe you have unsynced data. Doing so may permanently remove locally stored findings that haven't yet been uploaded.
+  </Warning>
+</Accordion>
+
+<Accordion title="I can't send an agreement">
+  If you're having trouble sending an inspection agreement to a client, check the following:
+
+  1. **Verify the client's email address.** Open the work order and confirm the email address on file is correct before attempting to send.
+  2. **Check that an agreement template is set up.** Go to **Settings → Agreement Templates** and confirm you have at least one active template configured. If the template list is empty, you'll need to create one before sending.
+  3. **Check the agreement status.** If the agreement shows as already sent, the client may have received it but not yet opened it. You can resend it from the work order screen.
+  4. **Confirm your subscription includes agreements.** Depending on your InspectIQ plan, agreement sending may be a premium feature. Check your plan details in **Settings → Billing**.
+</Accordion>
+
+<Accordion title="A team member can't see a work order">
+  If someone on your team can't see a work order that they should have access to, try these steps:
+
+  1. **Check the assignment.** Open the work order and confirm it's assigned to the correct team member. If it's unassigned or assigned to someone else, update the assignment and ask them to refresh their app.
+  2. **Check their role and permissions.** Go to **Settings → Team** and review the team member's role. Some roles restrict access to unassigned work orders. Adjust their permissions if needed.
+  3. **Ask them to refresh the app.** Sometimes a quick pull-to-refresh on the work orders list is all it takes to surface a newly assigned job.
+  4. **Check that they're logged in to the correct account.** If your team member has multiple InspectIQ accounts (e.g. personal and company), make sure they're logged in to the right one.
+  5. **Confirm their account is active.** Go to **Settings → Team** and confirm their account status shows as **Active**. Pending or deactivated accounts won't have access to work orders.
+</Accordion>
+
+<Card title="Still stuck? Contact Support" icon="headset" href="mailto:support@inspectiq.com">
+  If you've worked through the steps above and you're still running into trouble, the InspectIQ support team is here to help. Email us at support@inspectiq.com and include your account email, work order ID (if applicable), and a description of the issue.
+</Card>
