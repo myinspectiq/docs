@@ -1,92 +1,76 @@
 ---
 title: "Scheduling an Inspection"
-description: "Learn how to schedule inspections directly or let clients select from available appointment times."
-icon: "calendar-clock"
+description: "Schedule an inspection directly or send appointment options for your client to choose from."
+icon: "calendar-check"
 ---
 
-InspectIQ gives you two ways to schedule a home inspection: choose an appointment yourself or send available date and time options to your client.
+After creating a Work Order, you can schedule the inspection in one of two ways: **send appointment options to your client** or **choose the date and time yourself**.
 
-Both methods are managed directly from the Work Order.
-
-## Access Inspection Scheduling
+## Open Scheduling
 
 1. Select **Work Orders** from the main navigation.
 2. Open the Work Order you want to schedule.
-3. Locate the scheduling options.
+3. Find the **Schedule the Inspection** section.
+4. Choose **Send Time Options to Client** or **Choose Date & Time Myself**.
 
-Choose the method that works best for your inspection.
+## Send Time Options to Client
 
-## Send Date & Time Options to Your Client
+Use this option when you want the client to select a suitable appointment from times you offer.
 
-Use this option when you want your client to choose from appointment times you provide.
+1. Select **Send Time Options to Client**.
+2. In **Offer time options**, enter a start and end date and time for each option.
+3. Select **\+ Add time option** if you need another appointment choice.
+4. Review your choices and select **Send options**.
 
-### Offer Appointment Times
+The scheduling window allows **3 to 6 time blocks**. Each block uses a one-hour end-time default; adjust the start and end times to suit the inspection.
 
-1. Open the Work Order.
-2. Select **Send Date & Time Options**.
-3. Add the dates and times you want to offer.
-4. Review your proposed appointment options.
-5. Send the options to your client.
+![Offer Time Options](/images/offer-time-options.png "Offer Time Options")
 
-Your client can review the available appointments and select their preferred option.
+### While You're Waiting for the Client
 
-### Client Selects an Appointment
+After you send the options, InspectIQ creates a booking request. The Work Order shows that the options were sent and that you're **Waiting for Client to Choose a Date**.
 
-Once your client selects an available date and time, the Work Order can proceed with the confirmed appointment.
+From the booking request, you can:
 
-<Tip>
-  Offer appointment times that account for travel between properties and the expected inspection duration.
-</Tip>
+- **View Options** — Review the times you offered.
+- **Resend link** — Send the booking link again.
+- **Copy** — Copy the booking link.
+- **Set Myself** — Schedule directly instead.
+- **Cancel session** — Cancel the outstanding booking request.
+
+![Booking Options Sent](/images/booking-options-sent.png "Booking Options Sent")
+
+<Note>
+  While a booking request is outstanding, the appointment has not yet been selected. Don't treat **Options Sent** as a confirmed inspection date.
+</Note>
 
 ## Choose Date & Time Myself
 
-Use this option when you've already agreed on an inspection appointment or prefer to schedule it directly.
+Use this method if you've already confirmed an appointment with the client or want to set the schedule directly.
 
-### Schedule the Appointment
+1. From **Schedule the Inspection**, select **Choose Date & Time Myself**.
+2. Enter the **Set Inspection Date & Time** value.
+3. Select **Schedule**.
+4. Review the date and time shown under **Work Order Status**.
 
-1. Open the Work Order.
-2. Select **Choose Date & Time Myself**.
-3. Choose the inspection date.
-4. Select the inspection time.
-5. Review the appointment details.
-6. Confirm the schedule.
+![Schedule Date Myself](/images/schedule-date-myself.png "Schedule Date Myself")
 
-The selected appointment is associated with the Work Order.
+## Check Your Scheduling Status
 
-## Inspection Duration
+The **Work Order Status** section shows the scheduling state:
 
-InspectIQ uses the inspection duration configured in your Business Settings as a starting point.
+| Scheduling state | Meaning |
+| --- | --- |
+| **Not Scheduled** | No inspection appointment has been set. |
+| **Options Sent** | Appointment choices have been sent and the client has not yet selected one. |
+| **Scheduled** | An inspection date and time are set. |
 
-The duration can be adjusted for individual Work Orders when necessary.
-
-To review your default inspection duration, navigate to:
-
-**Settings → Business Settings → Inspection Setup → Defaults**
-
-<Note>
-  Inspection duration is an estimate of the time required to conduct the inspection. Allow additional time when necessary for larger properties or additional services.
-</Note>
-
-## Review Your Scheduled Inspection
-
-After scheduling, open the Work Order to review the appointment information.
-
-Confirm that:
-
-- The inspection date is correct.
-- The inspection time is accurate.
-- The expected duration is appropriate.
-- The correct inspector is assigned, if applicable.
-- The client's contact information is accurate.
-
-Scheduled Work Orders appear in the **Scheduled** stage of the Work Orders dashboard.
+After scheduling directly, the Work Order displays the scheduled date and time and moves to the next step: preparing the inspection agreement.
 
 ## What Happens Next?
 
-Once the inspection is scheduled, the next step is to prepare the inspection agreement.
-
-From the Work Order, you can generate the agreement using your configured template and proceed with the required signatures.
+Once the inspection date and time have been set, continue in the Work Order to **Generate Agreement** or **Send Agreement**, depending on its current agreement status.
 
 <Tip>
-  Review your agreement template under **Business Settings → Templates & Agreements** before sending agreements to clients.
+  Confirm the appointment duration and allow enough time for travel and any additional services before offering appointment options.
 </Tip>
