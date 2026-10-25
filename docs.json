@@ -52,7 +52,7 @@
       {
         "group": "Home",
         "pages": [
-          "index"
+          "home"
         ]
       },
       {
@@ -66,7 +66,7 @@
       {
         "group": "Work Orders",
         "pages": [
-          "untitled-page-5",
+          "work-orders/work-orders-overview",
           "work-orders/creating-work-orders",
           "work-orders/scheduling-inspections",
           "work-orders/agreements-signatures"
@@ -75,43 +75,43 @@
       {
         "group": "Inspections",
         "pages": [
-          "untitled-page-6",
+          "inspections/conducting-an-inspection",
           "inspections/area-overviews",
           "inspections/capturing-photos",
           "inspections/ai-generated-findings",
           "inspections/completing-inspection",
-          "offline-mode/overview"
+          "inspections/offline-mode"
         ]
       },
       {
         "group": "Reports",
         "pages": [
-          "untitled-page-7",
-          "reports/overview",
-          "reports/report-delivery"
+          "reports/reports-overview",
+          "reports/managing-delivering-reports",
+          "reports/finalizing-reports"
         ]
       },
       {
         "group": "Business Settings",
         "pages": [
-          "settings/business-settings",
-          "company-profile",
-          "fees-and-services",
-          "team-management/overview",
-          "credentials-and-standards",
-          "settings/untitled-page",
-          "untitled-page",
-          "settings/inspection-report-content",
-          "report-and-delivery-settings",
-          "untitled-page-2"
+          "business-settings/business-settings-overview",
+          "business-settings/company-profile",
+          "business-settings/fees-and-services",
+          "business-settings/team-management",
+          "business-settings/credentials-and-standards",
+          "business-settings/inspection-setup",
+          "business-settings/templates-agreements",
+          "business-settings/inspection-report-content",
+          "business-settings/report-and-delivery-settings",
+          "business-settings/subscription-billing"
         ]
       },
       {
         "group": "My Settings",
         "pages": [
-          "settings/my-settings",
-          "untitled-page-3",
-          "untitled-page-4"
+          "my-settings/my-profile",
+          "my-settings/inspection-preferences",
+          "my-settings/security"
         ]
       }
     ]
