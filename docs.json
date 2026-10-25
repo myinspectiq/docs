@@ -66,7 +66,7 @@
       {
         "group": "Work Orders",
         "pages": [
-          "work-orders/overview",
+          "untitled-page-5",
           "work-orders/creating-work-orders",
           "work-orders/scheduling-inspections",
           "work-orders/agreements-signatures"
@@ -75,12 +75,10 @@
       {
         "group": "Inspections",
         "pages": [
-          "inspections/overview",
-          "inspections/capturing-photos",
+          "untitled-page-6",
           "inspections/area-overviews",
-          "inspections/capturing-findings",
+          "inspections/capturing-photos",
           "inspections/ai-generated-findings",
-          "inspections/reviewing-editing-findings",
           "inspections/completing-inspection",
           "offline-mode/overview"
         ]
@@ -88,6 +86,7 @@
       {
         "group": "Reports",
         "pages": [
+          "untitled-page-7",
           "reports/overview",
           "reports/report-delivery"
         ]
@@ -110,7 +109,9 @@
       {
         "group": "My Settings",
         "pages": [
-          "settings/my-settings"
+          "settings/my-settings",
+          "untitled-page-3",
+          "untitled-page-4"
         ]
       }
     ]
