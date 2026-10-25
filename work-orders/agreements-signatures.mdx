@@ -1,129 +1,85 @@
 ---
 title: "Inspection Agreements"
-description: "Generate, send, and manage inspection agreements and electronic signatures."
+description: "Send inspection agreements, track signatures, and countersign before starting an inspection."
 icon: "file-signature"
 ---
 
-InspectIQ lets you generate and manage inspection agreements directly from your Work Orders.
+InspectIQ manages inspection agreements within each Work Order. Once the appointment is scheduled, you can send the agreement to your client, follow its signing status, and countersign it to complete the process.
 
-Agreements use your configured templates and inspection information to prepare documents for client and inspector signatures.
-
-## Access Inspection Agreements
+## Open the Agreement
 
 1. Select **Work Orders** from the main navigation.
-2. Open the Work Order you want to manage.
-3. Locate the agreement section within the Work Order.
+2. Open the scheduled Work Order.
+3. Scroll to **Work Order Status** and the highlighted **Next Step** section.
+4. Review the agreement status and available actions.
 
-From here, you can generate an agreement, review its status, and complete the signing process.
+## Review and Send the Agreement
 
-## Generate an Agreement
+When the Work Order shows **Send the Agreement**, review the generated document before sending it.
 
-Once the Work Order has been prepared and the inspection appointment is scheduled, you can generate the inspection agreement.
-
-1. Open the Work Order.
-2. Select **Generate Agreement**.
-3. Review the available agreement details.
-4. Generate the agreement using your configured template.
-
-InspectIQ uses information from the Work Order and your agreement template to populate the document.
-
-This may include:
-
-- Company and inspector information
-- Client information
-- Property address
-- Inspection details
-- Inspection fees
-- Agreement terms and conditions
+1. Select **Preview Agreement** and check the client, property, pricing, and terms.
+2. Return to the Work Order.
+3. Select the available send-agreement action.
+4. Confirm that InspectIQ reports the agreement was sent.
 
 <Note>
-  Agreement content and default templates are configured under **Settings → Business Settings → Templates & Agreements**.
+  Agreement wording and templates are managed separately under **Settings → Business Settings → Templates & Agreements**.
 </Note>
 
-## Preview Your Agreement
+## Wait for the Client to Sign
 
-Before sending the agreement, review its contents.
+After the agreement is emailed, the Work Order displays **Waiting for Client Signature**, and its agreement status shows **Sent to Client**.
 
-1. Locate the generated agreement.
-2. Select **Preview Agreement**, where available.
-3. Review the document for accuracy.
+![Agreement Awaiting Client](/images/agreement-awaiting-client.png "Agreement Awaiting Client")
 
-Pay particular attention to the client name, property address, inspection fees, and agreement terms.
+While waiting, the following actions are available:
 
-<Tip>
-  Always review your agreement before sending it, especially when you've recently updated your agreement template or business settings.
-</Tip>
-
-## Send the Agreement to Your Client
-
-Once the agreement is ready:
-
-1. Open the agreement section in the Work Order.
-2. Select the available option to send the agreement.
-3. Review the recipient information.
-4. Send the agreement to your client.
-
-The client can then review and electronically sign the agreement.
+- **View Agreement** — Open the agreement.
+- **Resend Agreement** — Email the agreement again.
+- **Copy Sign Link** — Copy the link to the signing page.
+- **Mark as Signed (Offline)** — Record an agreement signed outside the online signing workflow.
 
 <Note>
-  Ensure the client's email address is correct in the Work Order before sending the agreement.
+  **Sent to Client** does not mean the agreement is signed. Check the status before moving to the next stage.
 </Note>
 
 ## Client Signature
 
-The client reviews the agreement and completes the electronic signature process.
+The client opens the signing link, reviews the agreement, accepts the signing terms, and completes the required signature fields.
 
-InspectIQ tracks the agreement's progress within the Work Order.
-
-You can return to the Work Order to check whether the client has completed their signature.
+After the client signs, InspectIQ updates the Work Order to the **Awaiting your countersignature** step.
 
 ## Inspector Countersignature
 
-After the client signs, the inspector can complete the required countersignature.
+1. Return to the Work Order after the client has signed.
+2. Open the countersignature action in **Next Step**.
+3. Review the agreement and select **Agree & Start Signing**.
+4. Complete the required inspector signature fields and finish the signing process.
 
-1. Open the Work Order.
-2. Locate the agreement requiring your signature.
-3. Review the agreement.
-4. Complete the inspector signing step.
+![Inspector Countersignature](/images/inspector-countersignature.png "Inspector Countersignature")
 
-This completes the agreement's electronic signature process.
+<Warning>
+  Review the agreement before signing. Do not countersign a document containing incorrect inspection details or terms.
+</Warning>
+
+## After Both Parties Sign
+
+When the signing process is complete, the Work Order displays **Complete (Signed)** for the agreement and **Inspection Ready** as the next step.
+
+InspectIQ automatically creates the linked inspection as a draft. Select **Open Inspection** to enter the inspection workspace.
+
+![Agreement Complete Inspection Ready](/images/agreement-complete-inspection-ready.png "Agreement Complete Inspection Ready")
+
+You can also use **View** or **Download** beside the completed agreement in **Work Order Status**.
 
 <Note>
-  The available signing actions depend on the agreement's current status and whether the client has already signed.
+  The **Payment** status is tracked separately from agreement signatures. A signed agreement can appear alongside an unpaid balance.
 </Note>
 
-## Monitor Agreement Status
+## Before Opening the Inspection
 
-Use the Work Order to track the agreement throughout the signing process.
-
-Depending on its progress, you may see options to:
-
-- Review the agreement.
-- Send the agreement to the client.
-- Check signature progress.
-- Complete the inspector countersignature.
-- Access the completed agreement.
-
-The available actions change as the agreement progresses.
-
-## What Happens After Signing?
-
-Once the required agreement steps are complete, the Work Order can proceed to the inspection stage.
-
-Select **Open Inspection** from the Work Order to access the inspection workspace.
-
-This is where you'll capture photos, document findings, and prepare inspection reports.
-
-## Before Starting Your Inspection
-
-We recommend confirming that:
-
-- The inspection appointment is correct.
-- The client information is accurate.
-- The agreement reflects the correct inspection services and fees.
-- The client has completed their signature.
-- The inspector countersignature is complete, where required.
+Confirm the agreement is **Complete (Signed)** and that the correct inspector, appointment, and property details are shown in the Work Order.
 
 <Tip>
-  Configure your agreement template before creating your first Work Order to make agreement preparation faster and more consistent.
+  If you need to change your standard agreement language, update the template in Business Settings before preparing future agreements.
 </Tip>
