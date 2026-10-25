@@ -1,217 +1,91 @@
 ---
 title: "Creating a Work Order"
-description: "Learn how to create a Work Order, enter property and client details, and configure inspection pricing."
-icon: "file-plus"
+description: "Create a Work Order with property details, services, pricing, and client information."
+icon: "file-circle-plus"
 ---
 
-Creating a Work Order is the first step in organizing a new home inspection in InspectIQ.
-
-A Work Order brings together the property information, inspection services, pricing, client details, and scheduling information needed to prepare for an inspection.
+A Work Order brings together the property, inspection services, pricing, and contact information needed before scheduling an inspection.
 
 ## Start a New Work Order
 
 1. Select **Work Orders** from the main navigation.
-2. Click **\+ New Work Order**.
-3. Complete the sections in the New Work Order form.
+2. Select **\+ New Work Order**.
+3. Complete the form, beginning with **Property Info**.
 
-The form is organized into six sections:
-
-- Property Info
-- Location & Pricing
-- Inspection Details
-- Client / Homebuyer
-- Buyer's Agent
-- Seller's Agent
+![New Work Order Property](/images/new-work-order-property.png "New Work Order Property")
 
 ## Property Info
 
-Start by entering the details of the property being inspected.
+Enter an **MLS #** or start typing a Canadian address in **OR Address**. Select an address suggestion when available, or select **Lookup** to retrieve available listing information using an MLS number.
 
-### Property Lookup
+Review any returned information before continuing. Lookup may not provide every field, and you can enter or correct details manually.
 
-InspectIQ includes a property lookup feature that can help populate available property information.
+Complete or review:
 
-1. Enter an **MLS #**, if available, or begin typing a Canadian address.
-2. Select an address suggestion when available.
-3. Click **Lookup** to retrieve available property details.
-4. Review the information and make any necessary corrections.
+- **Inspection Type** — Select the type of inspection.
+- **Services Needed (Add-ons)** — Select any additional inspection services.
+- **Year Built** and **Square Footage** — Enter the available property information.
+- **Property Type** — Select the appropriate property type.
 
 <Note>
-  Property lookup results depend on the information available for the address or MLS listing. Always verify the details before proceeding.
+  The services offered here come from **Business Settings → Fees & Services**.
 </Note>
-
-### Property Details
-
-Review or enter the following information:
-
-| Field | Description |
-| --- | --- |
-| **Inspection Type** | The type of inspection being performed. |
-| **Services Needed (Add-ons)** | Additional inspection services requested by the client. |
-| **Year Built** | The property's approximate construction year. |
-| **Square Footage** | The property's approximate size. |
-| **Property Type** | The type of property being inspected, such as detached or attached. |
-
-### Select Additional Services
-
-If the inspection includes ancillary services:
-
-1. Open **Services Needed (Add-ons)**.
-2. Select the applicable services.
-3. Review their pricing in the Work Order's Fee Summary.
-
-Available services and their pricing are configured under **Business Settings → Fees & Services**.
 
 ## Location & Pricing
 
-This section contains the property address and inspection pricing.
+Review the **Property Address**, **City**, **Province**, **Postal Code**, and **MLS Number**. Correct anything that is missing or inaccurate.
 
-### Property Address
+![Property Lookup And Pricing](/images/property-lookup-and-pricing.png "Property Lookup And Pricing")
 
-Enter or verify the following:
+### Fees and Taxes
 
-- Property Address
-- City
-- Province
-- Postal Code
-- MLS Number
+The form uses your configured business pricing as a starting point. Review the **General Fee** and **Tax Rate** and adjust them for this Work Order if necessary.
 
-If you used the property lookup feature, some of these fields may already be populated.
+### Discount Override
 
-### Inspection Fees & Taxes
+Under **Per-WO Discount Override**, choose **\$ Dollar** or **% Percentage** and enter an amount when you need a Work Order-specific discount.
 
-InspectIQ uses the default pricing configured in your Business Settings.
+### Fee Summary
 
-Review the following fields:
+Check the **Fee Summary** to confirm the general inspection charge, selected add-on services, applicable tax, and total.
 
-| Field | Description |
-| --- | --- |
-| **General Inspection Fee** | The fee for the primary home inspection. |
-| **Tax Rate (%)** | The applicable tax percentage. |
-| **Discount Amount** | An optional discount specific to this Work Order. |
-
-You can adjust the fee and tax values for the individual Work Order without changing your business-wide defaults.
-
-### Apply a Discount
-
-The **Per-WO Discount Override** section allows you to override your default discount.
-
-1. Choose **\$ Dollar** or **% Percentage**.
-2. Enter the discount amount.
-3. Review the updated Fee Summary.
-
-Leave the discount amount empty if you want to use your configured business default.
-
-### Review the Fee Summary
-
-The **Fee Summary** provides a breakdown of the inspection charges, including:
-
-- General inspection fee
-- Selected add-on services
-- Applicable discounts
-- Taxes
-- Total inspection fee
-
-Review the total before creating the Work Order.
+![Fee Summary And Inspection Details](/images/fee-summary-and-inspection-details.png "Fee Summary And Inspection Details")
 
 <Tip>
-  Confirm all requested ancillary services before finalizing the Work Order so the pricing accurately reflects the inspection being performed.
+  Check selected add-on services and the final total with your client before proceeding.
 </Tip>
 
-## Inspection Details
+## Inspection Details (Optional)
 
-Enter the anticipated inspection date, time, and duration.
+You can enter an **Inspection Date & Time**, **Duration (Hours)**, and **Notes** now, or leave the appointment date and time empty to confirm later through scheduling.
 
-| Field | Description |
-| --- | --- |
-| **Inspection Date & Time** | The proposed or confirmed appointment date and time. |
-| **Duration (Hours)** | The expected inspection duration. |
-| **Notes** | Additional information relevant to the inspection. |
-
-**If the inspection date hasn't been confirmed, you can leave it empty and schedule the appointment later.**
-
-The inspection duration is initially populated using your configured default.
+The duration is initially populated from your inspection defaults and can be adjusted for this Work Order.
 
 ## Client / Homebuyer
 
-Enter the information for the client requesting the inspection.
-
-### Required Contact Information
-
-- Full Name
-- Email
-- Phone
-
-### Optional Mailing Address
-
-You can also provide the client's:
-
-- Mailing Address
-- City
-- Province / State
-- Postal / ZIP Code
-- Country
+Enter the client's **Full Name**, **Email**, and **Phone**. Add a mailing address if applicable.
 
 <Note>
-  The client email address is particularly important because InspectIQ uses it during the scheduling and agreement workflows.
+  Verify the client's email carefully. InspectIQ uses it in later scheduling and agreement steps.
 </Note>
 
-## Buyer's Agent
+## Buyer's Agent and Seller's Agent
 
-If a real estate agent represents the buyer, enter their information.
-
-Available fields include:
-
-- Full Name
-- Email
-- Phone
-- Brokerage
-
-This section is optional.
-
-## Seller's Agent
-
-If applicable, enter the seller's agent information.
-
-Available fields include:
-
-- Full Name
-- Email
-- Phone
-- Brokerage
-
-This section is also optional.
+If applicable, enter the agent's **Full Name**, **Email**, **Phone**, and **Brokerage** in the appropriate section. These sections are optional.
 
 ## Create the Work Order
 
-Once you've entered the required information:
+1. Review the property and contact details.
+2. Confirm services, fees, taxes, and any discount.
+3. Select **Create Work Order**.
+4. On a Team account, complete the **Assign Work Order** prompt if shown.
 
-1. Review the property details.
-2. Confirm the selected inspection services and pricing.
-3. Verify the client's contact information.
-4. Click **Create Work Order**.
-
-### Assigning an Inspector
-
-For Team accounts, InspectIQ may prompt you to assign the Work Order to an inspector.
-
-Select the appropriate inspector to continue.
-
-<Note>
-  Inspector assignment options depend on your account type and available team members.
-</Note>
+InspectIQ then opens the Work Order details, where you can continue with scheduling.
 
 ## What Happens Next?
 
-After creating the Work Order, InspectIQ opens its detail page.
+From the Work Order details, choose either **Send Time Options to Client** or **Choose Date & Time Myself** to schedule the appointment. After scheduling, continue with the inspection agreement process.
 
-From here, you can continue with the next steps:
-
-1. **Schedule the inspection** — Select the appointment yourself or send date and time options to the client.
-2. **Generate the agreement** — Prepare the agreement using your configured template.
-3. **Collect signatures** — Complete the required client and inspector signing steps.
-4. **Open the inspection** — Access the inspection workspace when ready.
-
-<Tip>
-  Before creating your first Work Order, review your **Fees & Services**, **Inspection Setup**, and **Templates & Agreements** settings. This helps ensure your defaults are ready for use.
-</Tip>
+<Note>
+  Creating a Work Order does not mean the appointment has been confirmed or the agreement has been signed. Those steps are handled separately.
+</Note>
