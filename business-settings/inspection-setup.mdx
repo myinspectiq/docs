@@ -1,135 +1,92 @@
 ---
 title: "Inspection Setup"
-description: "Configure your inspection defaults, areas, rooms, categories, and severity definitions."
-icon: "clipboard-check"
+description: "Configure your company's inspection defaults, areas and rooms, finding categories, and severity definitions."
+icon: "clipboard-list"
 ---
 
-Inspection Setup lets you configure the default settings and checklists used when creating inspections in InspectIQ.
+Use **Inspection Setup** to configure the structure InspectIQ uses when creating new inspections.
 
-Taking a few minutes to review these settings can help keep your inspections consistent and reduce repetitive setup.
+Go to **Settings → Business Settings → Inspection Setup**. The page contains four expandable sections: **Defaults**, **Area / Room Library**, **Inspection Categories**, and **Severity Definitions**.
 
-## Access Inspection Setup
+<img
+  src="/images/01-inspection-setup.jpg"
+  alt="01 Inspection Setup"
+  title="01 Inspection Setup"
+/>
 
-1. Select **Settings** from the main navigation.
-2. Select **Business Settings**.
-3. Choose **Inspection Setup** from the left-hand menu.
+## Defaults
 
-You'll see four expandable sections: **Defaults**, **Area / Room Library**, **Inspection Categories**, and **Severity Definitions**.
-
-## 1. Defaults
-
-Expand **Defaults** to review your default inspection settings.
-
-| Setting | Description |
-| --- | --- |
-| **Default Inspection Type** | The inspection type used to prefill new Work Orders. |
-| **Default Inspection Duration (Hours)** | The estimated duration of an inspection, in hours. |
-| **Default Reminder** | Controls whether clients receive an automatic reminder before their scheduled inspection. |
-| **Team Notifications** | Controls whether you receive copies of your team members' inspection activity emails. |
-
-### Team Notifications
-
-Turn on **Email me about my team's inspection activity** to receive copies of activity emails for your team members, including agreement activity, payments, completed inspections, and booking updates.
-
-Your own Work Order emails are always sent regardless of this setting.
-
-## 2. Area / Room Library
-
-The **Area / Room Library** contains the areas, rooms, and checklist items available when conducting inspections.
-
-InspectIQ includes a starting library organized into area groups such as Exterior, Interior, Roof / Attic, and Mechanical.
-
-Each area or room can contain checklist items to guide the inspection process.
-
-### Add an Area or Room
-
-1. Expand **Area / Room Library**.
-2. Select **\+ Add Area / Room**.
-3. Enter a **Name** for the new area or room.
-4. Select its **Area Group**.
-5. Optionally, enter a short **Description**.
-6. Select **\+ Add checklist item** to add inspection checklist items as needed.
-7. Select **Create**.
-
-Your new area or room will appear in the library under its selected area group.
-
-### Edit or Delete an Area or Room
-
-Find the area or room in the library and select:
-
-- **Edit** to update its configuration.
-- **Delete** to remove it from the library.
-
-<Warning>
-  Changes to the Area / Room Library affect future inspections only. Inspections already created keep their existing checklist snapshot.
-</Warning>
-
-### Customize Your Checklists
-
-Checklist items provide a starting point for inspectors when reviewing an area or room.
-
-You can configure checklist items in the library, and inspectors can edit their checklist items within individual inspections.
-
-<Tip>
-  Review the existing library before adding new areas or rooms. InspectIQ already includes common inspection areas and checklists that you can customize to match your workflow.
-</Tip>
-
-## 3. Inspection Categories
-
-**Inspection Categories** classify findings by the building system they relate to.
-
-For example:
-
-- Structural
-- Roofing
-- Plumbing
-- Electrical
-- Heating & Cooling (HVAC)
-- Interior
-
-Categories are different from Area Groups:
-
-- **Area Groups** organize where an inspection takes place.
-- **Inspection Categories** identify which building system a finding relates to.
-
-### Add a Category
-
-1. Expand **Inspection Categories**.
-2. Scroll to **Add Category**.
-3. Enter a category name.
-4. Select **Add**.
-
-To modify an existing category, select **Edit** beside its name. Select **Delete** to remove a category.
-
-## 4. Severity Definitions
-
-**Severity Definitions** describe the importance or urgency of inspection findings and are used across findings and reports.
-
-InspectIQ includes five severity levels:
-
-| Severity | Meaning |
-| --- | --- |
-| **Informational** | General information; no action required. |
-| **Minor** | Minor defect or wear; routine maintenance recommended. |
-| **Moderate** | Moderate concern; recommend further evaluation and correction. |
-| **Major** | Major concern; recommend correction by a qualified professional. |
-| **Safety** | Safety hazard; recommend immediate evaluation by a qualified professional. |
-
-Expand **Severity Definitions** to review the available levels and their descriptions.
-
-## Before Your First Inspection
-
-We recommend reviewing the following:
-
-- Your default inspection type and duration.
-- Your client reminder preference.
-- The areas and rooms included in your library.
-- The checklist items available for each area.
-- The categories used to classify findings.
-- The severity definitions used in reports.
-
-Once these settings are configured, you're ready to start creating Work Orders and conducting inspections.
+Expand **Defaults** to review company-wide settings for new Work Orders and client reminders.
 
 <Note>
-  You can return to Inspection Setup as your business needs change. Remember that Area / Room Library updates apply to newly created inspections, not inspections already in progress.
+  The recording shows the Defaults section but does not open its fields. Review the available options in your account before making changes.
+</Note>
+
+## Area / Room Library
+
+Expand **Area / Room Library** to manage the areas and checklists used when creating inspections. Areas are grouped into sections such as **Exterior** and **Interior**.
+
+- Select **Add Area / Room** to create another entry.
+- Select **Edit** next to an existing area to change it.
+- Select **Delete** to remove an area you no longer want in your library.
+
+<img
+  src="/images/02-area-room-library.jpg"
+  alt="02 Area Room Library"
+  title="02 Area Room Library"
+/>
+
+### Add an area or room
+
+1. Select **Add Area / Room**.
+2. Enter the **Name**.
+3. Choose an **Area Group**.
+4. Optionally enter a **Description**.
+5. Add any **Checklist Items** you want inspectors to see.
+6. Select **Create**.
+
+<img
+  src="/images/03-add-area-room.jpg"
+  alt="03 Add Area Room"
+  title="03 Add Area Room"
+/>
+
+<Warning>
+  Changes to the Area / Room Library apply to **future inspections only**. Inspections already created retain their own checklist snapshot.
+</Warning>
+
+## Inspection Categories
+
+Expand **Inspection Categories** to manage the system classifications used for findings, such as **Plumbing**, **Electrical**, or **Roofing**. Existing categories have **Edit** and **Delete** actions.
+
+To create a category, enter its name in the **Add Category** field and select **Add**.
+
+<img
+  src="/images/04-inspection-categories.jpg"
+  alt="04 Inspection Categories"
+  title="04 Inspection Categories"
+/>
+
+<Tip>
+  An **Area / Room** describes _where_ you inspected. An **Inspection Category** describes _which system_ a finding relates to.
+</Tip>
+
+## Severity Definitions
+
+Expand **Severity Definitions** to review the five severity levels used across findings and reports:
+
+- **Informational** — General information; no action required.
+- **Minor** — Minor defect or wear; routine maintenance recommended.
+- **Moderate** — Moderate concern; further evaluation and correction recommended.
+- **Major** — Major concern; correction by a qualified professional recommended.
+- **Safety** — Safety hazard; immediate evaluation by a qualified professional recommended.
+
+<img
+  src="/images/05-severity-definitions.jpg"
+  alt="05 Severity Definitions"
+  title="05 Severity Definitions"
+/>
+
+<Note>
+  Review your Area / Room Library before creating new inspections so the starting structure reflects your inspection process.
 </Note>

@@ -1,58 +1,42 @@
 ---
 title: "Report & Delivery Settings"
-description: "Configure report delivery preferences and authorization language for sharing inspection reports."
+description: "Set your report delivery method and the authorization wording used in inspection agreements."
 icon: "send"
 ---
 
-Report & Delivery Settings lets you configure how completed inspection reports are delivered to clients and the authorization language used in your inspection agreements.
+Use **Report & Delivery Settings** to manage how inspection reports are delivered and the permission language used in your agreements.
 
-## Access Report & Delivery Settings
+Go to **Settings → Business Settings → Report & Delivery Settings**.
 
-1. Select **Settings** from the main navigation.
-2. Choose **Business Settings**.
-3. Select **Report & Delivery Settings** from the left-hand menu.
-
-You'll see two sections: **Report Delivery** and **Third-Party Sharing Authorization**.
+<img
+  src="/images/01-report-delivery-settings.jpg"
+  alt="01 Report Delivery Settings"
+  title="01 Report Delivery Settings"
+/>
 
 ## Report Delivery
 
-This section contains your report delivery preferences and the authorization wording associated with report delivery.
+Under **Report Delivery**, review the following fields:
 
-### Delivery Method
+- **Delivery Method** — The recording shows **Email** as the selected method.
+- **Delivery Authorization Language** — Review or edit the wording that authorizes delivery of the completed report.
 
-The **Delivery Method** field displays how completed inspection reports are delivered to clients.
-
-In the current configuration, the delivery method is **Email**.
-
-### Delivery Authorization Language
-
-The **Delivery Authorization Language** field contains the wording used to authorize delivery of the inspection report.
-
-Review this language to ensure it reflects your company's report delivery practices and client agreement requirements.
+This is a business-wide setting. It does not send a report by itself. For report sending and recipient selection, see [Managing & Delivering Reports](/reports/managing-delivering-reports).
 
 ## Third-Party Sharing Authorization
 
-This section contains the authorization language used when inspection reports may be shared with third parties, such as real estate agents or legal representatives.
+The **Third-Party Sharing Authorization** field lets you maintain the wording used when clients authorize sharing with others, such as a real estate representative or attorney.
 
-The wording configured here is connected to the agreement placeholder:
-
-\`{{third_party_authorization}}\`
-
-When this placeholder is included in an agreement template, it uses the authorization wording configured in this section.
+InspectIQ identifies this field as the source for the `{{third_party_authorization}}` agreement token. Review the language alongside your agreement template to make sure it reflects your business's practices.
 
 <Note>
-  Review your third-party sharing authorization language carefully. It should accurately describe when, how, and with whom inspection reports may be shared.
+  Report-delivery and third-party-sharing terms can have legal implications. Have your agreement wording reviewed for your jurisdiction and business requirements.
 </Note>
 
-## Before Delivering Reports
+## Review your changes
 
-We recommend reviewing:
-
-- Your report delivery method.
-- The authorization language associated with report delivery.
-- Your third-party sharing authorization wording.
-- Whether your agreement template includes the appropriate authorization placeholder.
+After editing the authorization fields, confirm the page indicates that your changes have been saved before leaving Settings.
 
 <Tip>
-  Review these settings alongside **Templates & Agreements** to ensure your agreement wording and report delivery practices are consistent.
+  Preview an agreement after changing authorization wording to confirm the final text reads correctly in context. See [Templates & Agreements](/settings/templates-agreements).
 </Tip>

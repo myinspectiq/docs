@@ -1,168 +1,66 @@
 ---
 title: "Templates & Agreements"
-description: "Configure your inspection agreement content, manage templates, and customize agreements for your clients."
+description: "Set up the agreement template, inspection scope, and policies used in InspectIQ Work Orders."
 icon: "file-signature"
 ---
 
-InspectIQ lets you customize your inspection agreements so they're ready when you create a new Work Order.
+Use **Templates & Agreements** to manage the wording that goes into your inspection agreements. Before sending agreements to clients, review the language to ensure it suits your business and applicable requirements.
 
-You can manage your standard agreement wording, create reusable templates, and use placeholders to automatically insert information from each inspection.
+Go to **Settings → Business Settings → Templates & Agreements**.
 
-## Access Templates & Agreements
+<img
+  src="/images/01-templates-agreements.jpg"
+  alt="01 Templates Agreements"
+  title="01 Templates Agreements"
+/>
 
-1. Select **Settings** from the main navigation.
-2. Choose **Business Settings**.
-3. Select **Templates & Agreements** from the left-hand menu.
+## Edit your agreement template
 
-You'll find two main areas: **Agreement Template** and **Agreement Content**.
+Select **Open Template Editor** to open the agreement template library, then choose a template to edit. The editor includes a document body and available merge fields for inserting inspection and client details.
 
-## Agreement Content
+1. Open the template library and select the agreement you want to edit.
+2. Review and edit the agreement wording.
+3. Use the available merge fields where information should be populated from the Work Order.
+4. Save the template using the editor's **Save Template** control.
 
-The **Agreement Content** section contains the standard wording and policies used for your inspection agreements.
+<img
+  src="/images/03-agreement-template-editor.jpg"
+  alt="03 Agreement Template Editor"
+  title="03 Agreement Template Editor"
+/>
 
-Expand each section to review and customize its content.
+Select **Preview Agreement** from Templates & Agreements to inspect the document's layout and wording before using it for a client.
 
-### Inspection Content
+## Customize agreement content
 
-Review the wording that describes the inspection and its general conditions.
+Expand **Agreement Content** to edit the standard inspection language that can be inserted into the agreement. The recording shows fields for:
 
-This includes information such as:
+- **Inspection Scope** — what the inspection includes.
+- **Inspection Limitations** — limitations of the inspection and its observations.
+- **Inspection Exclusions** — services or conditions outside the inspection scope.
 
-- Inspection scope
-- Inspection limitations
-- Purpose of the inspection
+These fields are associated with agreement merge tokens. Adjust the text carefully so it reflects the services you actually provide.
 
-### Policies
+## Review company policies
 
-Configure the policies that apply to your inspection services, including:
+Expand **Policies** to edit the agreement's standard policy language, including cancellation, rescheduling, confidentiality, and third-party reliance terms.
 
-- Cancellation Policy
-- Rescheduling Policy
-- Confidentiality Terms
-- Third-Party Reliance Terms
-
-### Payment Terms
-
-Configure your agreement's payment requirements, including:
-
-- Payment Terms
-- Payment Due Days After Agreement
-
-### Signature & Legal
-
-Review the legal provisions associated with your agreements.
-
-These include:
-
-- Jurisdiction & Legal
-- Governing Law
-- Dispute Resolution
-- Liability Limit
-- Claim Notice Period
-- Electronic Signature Consent
-- Inspector Countersignature
-
-<Tip>
-  Review your agreement content before sending your first agreement. Your wording should reflect your business practices, applicable requirements, and professional obligations.
-</Tip>
-
-## Agreement Templates
-
-Agreement Templates control the document presented to clients.
-
-InspectIQ provides a template editor where you can customize agreement wording and insert placeholders for information that changes between inspections.
-
-### Open the Template Editor
-
-1. Locate the **Agreement Template** section.
-2. Select **Open Template Editor**.
-3. You'll be taken to the **Agreement Templates** page.
-
-Here you can view and manage your available templates.
-
-### Create a New Template
-
-1. Select **\+ New Template**.
-2. Enter a **Template Name**.
-3. Optionally, enter a **Template Description**.
-4. Configure the template's status.
-5. Add or edit your agreement body.
-6. Select **Save Template** when finished.
-
-You can also use **Import** on the Agreement Templates page to import an existing agreement template.
-
-### Edit an Existing Template
-
-1. Open the **Agreement Templates** page.
-2. Find the template you want to modify.
-3. Select **Edit**.
-4. Update the agreement content as needed.
-5. Select **Save Template**.
-
-You can also use **Delete** to remove templates you no longer need.
-
-## Using Placeholders
-
-Placeholders automatically insert information into your agreement using details associated with the inspection.
-
-For example, a placeholder can represent the client's name, the property address, or other inspection-specific information.
-
-This means you don't have to manually update these details every time you prepare an agreement.
-
-### Insert a Placeholder
-
-1. Open a template in the editor.
-2. Position your cursor where you want the information to appear.
-3. Find the appropriate placeholder in the **Placeholders** panel.
-4. Select **Insert variable** for that placeholder.
-5. Continue editing your agreement.
-
-The editor organizes placeholders into groups, including company, inspector, client, property, inspection, and other agreement-related information.
+<img
+  src="/images/02-agreement-policies.jpg"
+  alt="02 Agreement Policies"
+  title="02 Agreement Policies"
+/>
 
 <Note>
-  Keep placeholders intact when editing your agreement. They are used to insert the appropriate information when an agreement is generated.
+  The page displays a saved-state indicator for these settings. Check that your changes have been saved before leaving.
 </Note>
 
-## Set a Default Agreement Template
+## Use the agreement in a Work Order
 
-You can designate a template as your default for new agreements.
+When preparing a Work Order agreement, InspectIQ uses the configured agreement template and applicable Work Order details. Preview the generated agreement before sending it for signatures.
 
-1. Open the template in the editor.
-2. Enable **Set as default template**.
-3. Select **Save Template**.
-
-The default template provides a starting point when generating agreements.
-
-## Preview Your Agreement
-
-Before using an agreement template, review its appearance and content.
-
-1. Open the template in the editor.
-2. Select **Preview**.
-3. Review the agreement layout, wording, and placeholders.
-4. Return to the editor to make any necessary changes.
-5. Save your template.
-
-You can also access **Preview Agreement** from the main Templates & Agreements settings screen.
-
-<Tip>
-  Preview your agreement after making significant changes, especially when adding placeholders or modifying legal language.
-</Tip>
-
-## Before Sending Your First Agreement
-
-We recommend checking the following:
-
-- Your inspection scope and limitations are accurate.
-- Cancellation and rescheduling policies reflect your business practices.
-- Payment terms are configured.
-- Legal and signature provisions have been reviewed.
-- Your agreement template includes the appropriate placeholders.
-- Your preferred template is marked as the default.
-- You've previewed the completed agreement.
-
-Once your agreement settings are configured, you can use them as part of your Work Order and scheduling workflow.
+For the full workflow, see [Work Orders Overview](/work-orders/work-orders-overview).
 
 <Warning>
-  InspectIQ provides tools for customizing your agreements, but you remain responsible for their content. Consider having your agreement language reviewed by a qualified legal professional familiar with home inspections in your jurisdiction.
+  Default agreement wording is a starting point, not a legal-compliance guarantee. Have your agreement reviewed for your jurisdiction, standards of practice, insurer requirements, and business policies before using it with clients.
 </Warning>
