@@ -60,8 +60,8 @@
         "pages": [
           "getting-started/overview",
           "getting-started/account-setup",
-          "getting-started/first-inspection",
-          "recommended-workflow"
+          "recommended-workflow",
+          "getting-started/first-inspection"
         ]
       },
       {
