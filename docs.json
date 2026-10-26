@@ -87,8 +87,8 @@
         "group": "Reports",
         "pages": [
           "reports/reports-overview",
-          "reports/managing-delivering-reports",
-          "reports/finalizing-reports"
+          "reports/finalizing-reports",
+          "reports/managing-delivering-reports"
         ]
       },
       {
