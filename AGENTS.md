@@ -12,6 +12,10 @@
 - Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
 - Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
 
+> **Publishing to myinspectiq.com/docs**: This repo is the source of truth; the
+> marketing site (`../inspectiqhome`) syncs these docs into `/docs` with
+> `npm run sync-docs` run from that repo. See [WORKFLOW.md](./WORKFLOW.md).
+
 ## Terminology
 
 {/* Add product-specific terms and preferred usage */}
